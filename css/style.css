@@ -1,13 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body {
-    font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
-    color: #333;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: #333;
   font-weight: 300;
   text-align: center;
-  background-color: #f8f6f0;
+  background-color: #ffffff;
 }
+
 h1 {
   font-weight: 400;
   margin: 0px;
@@ -44,18 +45,18 @@ h2 {
 
 button {
   font-family: 'Work Sans', sans-serif;
-    font-size: 22px;
-    background-color: #279;
-    color: #fff;
-    border: 0px;
-    border-radius: 3px;
-    padding: 20px;
-    cursor: pointer;
-    margin-bottom: 20px;
+  font-size: 22px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 button:hover {
-    background-color: #38a;
+  background-color: #38a;
 }
 
 .slide {
@@ -82,7 +83,8 @@ button:hover {
 .presentation-container {
   position: relative;
   height: 300px;
-  margin-top: 40px;
+  margin: auto;
+  width: 80%;
 }
 
 .presentation {
@@ -103,4 +105,13 @@ button:hover {
 .title {
   font-size: 30px;
   margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #a3a3a3;
+  font-size:0.75em;
+  height: 3em;
+  padding: 1em;
+  color: #fff;
+
 }
