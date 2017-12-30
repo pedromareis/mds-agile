@@ -1,4 +1,20 @@
 (function() {
+
+  const myPresentation = [
+    {
+      title: "Planning",
+      text: "The fine art of expectation setting - In its simplest form,\n agile planning is nothing more than measuring the speed a team\n can turn user stories into working, production-ready software and then using that to \n figure out when they’ll be done."
+    },
+    {
+      title: "The Daily Meeting",
+      text: "Is focussed, short, and daily. The Project Manager facilitates the meeting. The idea is to check the team’s progress towards the Timebox goal and highlight any impediments. The meeting is held daily, at a regular timeslot, and lasts at most 15 minutes; the meeting is a key part of the Agile Lifecycle / Agile Heartbeat. I’m quite keen on the XP style “stand-up” meeting in front of the board with the Timebox Plan; standing up helps to keep the meeting short and the board acts a \n memory aide and highlights what the team needs to get done. The format of the meeting is predictable, with each team member answering three questions:\n What have you achieved since the last Daily Team Meeting?\n What will you achieve between now and the next Daily Team Meeting?\b What is getting in your way?"
+    },
+    {
+      title: "Planning and Controlling",
+      text: "Even More"
+    }
+  ];
+
   const myQuestions = [
     {
       question: "Who is the strongest?",
@@ -29,6 +45,21 @@
       correctAnswer: "d"
     }
   ];
+
+  function buildPresentation() {
+    const output = [];
+
+    myPresentation.forEach((currentPresentation) => {
+      output.push(
+        `<div class="presentation">
+           <div class="title"> ${currentPresentation.title} </div>
+           <div class="text"> ${currentPresentation.text} </div>
+         </div>`
+      );
+    });
+
+    presentationContainer.innerHTML = output.join("");
+  }
 
   function buildQuiz() {
     // we'll need a place to store the HTML output
@@ -97,9 +128,12 @@
   }
 
   function showSlide(n) {
+    presentations[currentPresentation].classList.remove("active-presentation")
     slides[currentSlide].classList.remove("active-slide");
+    presentations[n].classList.add("active-presentation");
     slides[n].classList.add("active-slide");
     currentSlide = n;
+    currentPresentation = n;
 
     if (currentSlide === 0) {
       previousButton.style.display = "none";
@@ -125,16 +159,20 @@
   }
 
   const quizContainer = document.getElementById("quiz");
+  const presentationContainer = document.getElementById("ok");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
 
   // display quiz right away
+  buildPresentation();
   buildQuiz();
 
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
   const slides = document.querySelectorAll(".slide");
+  const presentations = document.querySelectorAll(".presentation")
   let currentSlide = 0;
+  let currentPresentation = 0;
 
   showSlide(0);
 
