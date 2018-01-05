@@ -6,43 +6,43 @@
       text: "The fine art of expectation setting - In its simplest form,\n agile planning is nothing more than measuring the speed a team\n can turn user stories into working, production-ready software and then using that to \n figure out when they’ll be done."
     },
     {
-      title: "The Daily Meeting",
-      text: "Is focussed, short, and daily. The Project Manager facilitates the meeting. The idea is to check the team’s progress towards the Timebox goal and highlight any impediments. The meeting is held daily, at a regular timeslot, and lasts at most 15 minutes; the meeting is a key part of the Agile Lifecycle / Agile Heartbeat. I’m quite keen on the XP style “stand-up” meeting in front of the board with the Timebox Plan; standing up helps to keep the meeting short and the board acts a \n memory aide and highlights what the team needs to get done. The format of the meeting is predictable, with each team member answering three questions:\n What have you achieved since the last Daily Team Meeting?\n What will you achieve between now and the next Daily Team Meeting?\b What is getting in your way?"
-    },
-    {
       title: "Sprint",
       text: "In product development, a sprint is a set period of time during which specific work has to be completed and made ready for review. Each sprint begins with a planning meeting. During the meeting, the product owner (the person requesting the work) and the development team agree upon exactly what work will be accomplished during the sprint. The development team has the final say when it comes to determining how much work can realistically be accomplished during the sprint, and the product owner has the final say on what criteria need to be met for the work to be approved and accepted."
+    },
+    {
+      title: "The Daily Meeting",
+      text: "Is focussed, short, and daily. The Project Manager facilitates the meeting. The idea is to check the team’s progress towards the Timebox goal and highlight any impediments. The meeting is held daily, at a regular timeslot, and lasts at most 15 minutes; the meeting is a key part of the Agile Lifecycle / Agile Heartbeat. I’m quite keen on the XP style “stand-up” meeting in front of the board with the Timebox Plan; standing up helps to keep the meeting short and the board acts a \n memory aide and highlights what the team needs to get done. The format of the meeting is predictable, with each team member answering three questions:\n What have you achieved since the last Daily Team Meeting?\n What will you achieve between now and the next Daily Team Meeting?\b What is getting in your way?"
     }
   ];
 
   const myQuestions = [
     {
-      question: "Who is the strongest?",
+      question: "Planning in Agile?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "Nothing more than measuring the speed a team can turn user stories into working.",
+        b: "Write documentation",
+        c: "KOM"
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
     },
     {
-      question: "What is the best site ever created?",
+      question: "Who has the final say on what criteria?",
       answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
+        a: "Product owner.",
+        b: "Developement Team.",
+        c: "Scrum master.",
+        d: "Client."
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
     },
     {
-      question: "Where is Waldo really?",
+      question: "What is a daily meeting?",
       answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "Team meeting at the beginning of a sprint.",
+        b: "Team meeting at the end of a sprint.",
+        c: "Short meeting, daily and with 15 minutes max."
       },
-      correctAnswer: "d"
+      correctAnswer: "c"
     }
   ];
 
