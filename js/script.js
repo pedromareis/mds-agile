@@ -1,50 +1,332 @@
+var user = "Maria"
+
+function checkUse() {
+  var username = document.getElementById('inputUsername').value;
+  alert(username);
+  window.reloadlocation='template.html';
+  document.getElementById("username").innerHTML = username;
+  checkUserName();
+};
+
 (function() {
 
   const myPresentation = [
     {
-      title: "Planning",
-      text: "The fine art of expectation setting - In its simplest form,\n agile planning is nothing more than measuring the speed a team\n can turn user stories into working, production-ready software and then using that to \n figure out when they’ll be done."
+      content:"Content 1",
+      title: "",
+      text: ""
     },
     {
-      title: "Sprint",
-      text: "In product development, a sprint is a set period of time during which specific work has to be completed and made ready for review. Each sprint begins with a planning meeting. During the meeting, the product owner (the person requesting the work) and the development team agree upon exactly what work will be accomplished during the sprint. The development team has the final say when it comes to determining how much work can realistically be accomplished during the sprint, and the product owner has the final say on what criteria need to be met for the work to be approved and accepted."
+      content:"Content 2",
+      title: "",
+      text: ""
     },
     {
-      title: "The Daily Meeting",
-      text: "Is focussed, short, and daily. The Project Manager facilitates the meeting. The idea is to check the team’s progress towards the Timebox goal and highlight any impediments. The meeting is held daily, at a regular timeslot, and lasts at most 15 minutes; the meeting is a key part of the Agile Lifecycle / Agile Heartbeat. I’m quite keen on the XP style “stand-up” meeting in front of the board with the Timebox Plan; standing up helps to keep the meeting short and the board acts a \n memory aide and highlights what the team needs to get done. The format of the meeting is predictable, with each team member answering three questions:\n What have you achieved since the last Daily Team Meeting?\n What will you achieve between now and the next Daily Team Meeting?\b What is getting in your way?"
+      content:"Content 3",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 4",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 5",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 6",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 7",
+      title: "Importância do planeamento em Scrum",
+      text: "Num projeto baseado em Scrum, o planeamento é um fator importante. Apesar de ser uma metodologia ágil, algum nível de planeamento é necessário para que o trabalho possa correr sem grandes sobressaltos. A forma de planeamento em Scrum segue o manifesto ágil, de valorizar a resposta à mudança sobre o seguir um plano."
+    },
+    {
+      content:"Content 8",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 9",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 10",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 11",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 12",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 13",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 14",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 15",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 16",
+      title: "Scrum Rugby",
+      text: "No Rugby quando há uma paragem no jogo a bola pode ser reposta de várias maneiras (maul, ruck, scrum, ...). Na reposição scrum juntam-se oito jogadores de cada equipa colocando-se numa estrutura predefinida com o objetivo de lutar pela posse de bola. Num scrum os jogadores de uma equipa não funcionam como entidades individuais, mas como um unidade de força e com o objetivo de dominar os adversários e recuperar a posse de bola.A parte essencial do scrum é o trabalho em equipa, este é o ponto mais importante neste contexto pois se um elemento não está de acrodo com os outros toda a estrutura se pode desmoronar."
+    },
+    {
+      content:"Content 17",
+      title: "Equipa de Scrum",
+      text: "Uma equipa de Scrum dever saber gerir-se e nenhuma pessoa pode obrigar a mesma a trabalhar de certa maneira. Visto que uma equipa deve ser composto por individuos motivados e que tenham a capacidade de tomar decisões sobre pressão e que se adaptem facilmente a novas situações. A equipa não pode ser influenciável pois assume-se que são experientes e comunicativos entre eles, por sua vez esta não pode tomar decisões como alterar backlogs ao fazer o que não foi planeado na sprint meeting."
+    },
+    {
+      content:"Content 18",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 19",
+      title: "",
+      text: ""
+    },
+    {
+      content:"Content 20",
+      title: "",
+      text: ""
     }
   ];
 
   const myQuestions = [
     {
-      question: "Planning in Agile?",
+      content:"Content 1",
+      question: "",
       answers: {
-        a: "Nothing more than measuring the speed a team can turn user stories into working.",
-        b: "Write documentation",
-        c: "KOM"
+        a: "",
+        b: "",
+        c: ""
       },
       correctAnswer: "a"
     },
     {
-      question: "Who has the final say on what criteria?",
+      content:"Content 2",
+      question: "",
       answers: {
-        a: "Product owner.",
-        b: "Developement Team.",
-        c: "Scrum master.",
-        d: "Client."
+        a: "",
+        b: "",
+        c: "",
+        d: ""
       },
       correctAnswer: "a"
     },
     {
-      question: "What is a daily meeting?",
+      content:"Content 3",
+      question: "",
       answers: {
-        a: "Team meeting at the beginning of a sprint.",
-        b: "Team meeting at the end of a sprint.",
-        c: "Short meeting, daily and with 15 minutes max."
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 4",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 5",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 6",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 7",
+      question: "No contexto de um projeto baseado numa metodologia Scrum, o mais importante é ter um plano?",
+      answers: {
+        a: "Sim, absolutamente.",
+        b: "Não, o planeamento não tem interesse.",
+        c: "O planeamento não é importante, o importante é que cada elemento da equipa possa fazer o que mais gosta.",
+        d: "O planeamento é importante, mas não deve limitar a capacidade de poder responder às mudanças."
+      },
+      correctAnswer: "d"
+    },
+    {
+      content:"Content 8",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 9",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 10",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 1",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "a"
+    },
+    {
+      content:"Content 12",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: "",
+        d: ""
+      },
+      correctAnswer: "a"
+    },
+    {
+      content:"Content 13",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 14",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 15",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 16",
+      question: "No contexto do conteudo apresentado porque é que o Scrum se chama Scrum?",
+      answers: {
+        a: "Porque desenvolver em scrum é como um jogo de Rugby e devemos placar os nossos colegas com o objetivo de melhorar as nossas capacidades",
+        b: "Porque no desenovlvimentode software scrum é única maneira de jogar em equipa.",
+        c: "Porque no scrum é quando o trabalho em equipa é extremamente essencial e todos os jogadores devem estar focados no mesmo objetivo",
+        d: "Todas as anteriores"
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 17",
+      question: "Qual das seguintes não é uma regra válida do Scrum?",
+      answers: {
+        a: "Se a equipa sentir que não capaz de completar todas as User Stories que estão no Backlog do Sprint, pode consultar o Prodcut Owner para saber quais pode remover.",
+        b: "A equipa pode procurar conselhos, ajuda e informações externas ao projeto para ajudar no Sprint.",
+        c: "Ninguem pode dar à equipa conselhos, instruções, comentários e obrigar a seguir certas direções, a equipa deve ser auto gerida.",
+        d: "Se a Equipa verificar que consegue fazer mais do que o que foi planeado na Sprint Meeting pode selecionar e adicionar novos items do Product Backlog."
+      },
+      correctAnswer: "d"
+    },
+    {
+      content:"Content 18",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 19",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
+      },
+      correctAnswer: "c"
+    },
+    {
+      content:"Content 20",
+      question: "",
+      answers: {
+        a: "",
+        b: "",
+        c: ""
       },
       correctAnswer: "c"
     }
   ];
+
+  document.getElementById("username").innerHTML = user;
+  function checkUserName(name) {
+    alert("ok")
+      window.location='template.html';
+      document.getElementById('username').innerHTML = name;
+  }
 
   function buildPresentation() {
     const output = [];
@@ -162,6 +444,7 @@
   const presentationContainer = document.getElementById("ok");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
+//  let enterQuizButton = document.body.contains(document.getElementById("enterBtn"));
 
   // display quiz right away
   buildPresentation();

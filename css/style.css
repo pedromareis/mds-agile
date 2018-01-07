@@ -1,25 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body {
-  font-size: 20px;
-  font-family: 'Work Sans', sans-serif;
-  color: #333;
-  font-weight: 300;
-  text-align: center;
-  background-color: #ffffff;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
-  font-weight: 400;
   margin: 0px;
   padding: 10px;
   font-size: 30px;
-  background-color: #444;
   color: #fff;
 }
 
 h2 {
-  font-weight: 300;
   margin: 0px;
   padding: 10px;
   font-size: 20px;
@@ -28,19 +21,23 @@ h2 {
 }
 
 .question {
-  font-size: 30px;
+  font-size: 15px;
   margin-bottom: 10px;
+  /*font-weight: bold;*/
 }
 
 .answers {
   margin-bottom: 20px;
+  font-size: 10px;
   text-align: left;
   display: inline-block;
+  font-weight: lighter;
 }
 
 .answers label {
   display: block;
   margin-bottom: 10px;
+  font-weight: lighter;
 }
 
 button {
@@ -85,6 +82,7 @@ button:hover {
   height: 300px;
   margin: auto;
   width: 80%;
+  font-weight: lighter;
 }
 
 .presentation {
@@ -108,10 +106,135 @@ button:hover {
 }
 
 .footer {
-  background-color: #a3a3a3;
-  font-size:0.75em;
-  height: 3em;
-  padding: 1em;
-  color: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: left;
+}
 
+.footer-header{
+	color: #1400ff;
+	/*font-family: 'Muli-Regular', Muli;*/
+	margin-left: 80px;
+	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar{
+	background-color: #2196f3;
+	border-radius: 0px;
+	height: 70px;
+}
+
+.navbar-brand{
+	color: white;
+	font-size: 50px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	text-shadow: 2px 2px #000;
+	margin-top: 5px;
+}
+.navbar-brand2{
+	color: white;
+	padding-top: 25px;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: lighter;
+}
+
+.glyphicon{
+	padding-top: 15px;
+	font-size: 30px;
+}
+.glyphicon{
+	padding-top: 15px;
+	font-size: 30px;
+}
+
+.navbar-brand3{
+	color: white;
+	font-size: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: lighter;
+	margin-left: 10px;
+}
+.navbar-brand3:hover{
+	color: black;
+}
+
+
+.col-md-2 {
+	background-color: #2196f3;
+	border-radius: 0px;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.glyphicon {
+	color: white;
+}
+
+.glyphicon:hover {
+	color: black;
+}
+
+
+.col-md-6 {
+	background: #fff;
+	border-radius: 2px;
+	height: 350px;
+	margin: 1rem;
+	width: 45%;
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+
+
+/* MAIN PAGE CSS */
+.main-view{
+	margin-top: 50px;
+	text-align: center;
+}
+.project-title {
+	color: #2196f3;
+	font-size: 70px;
+	font-weight: bold;
+	text-shadow: 1px 1px #000;
+}
+.project-description {
+	color: #2196f3;
+	font-size: 25px;
+	font-weight: lighter;
+}
+.input1{
+	margin-top: 50px;
+	height: 60px;
+	border-radius: 10px;
+	border-width: 1px;
+	padding: 10px;
+	width: 40%;
+}
+.input1::-webkit-input-placeholder { /* WebKit browsers */
+@include default-placeholder-text;
+font-style: italic;
+	color: #2196f3
+}
+.input1::-moz-placeholder { /* Mozilla Firefox 19+ */
+@include default-placeholder-text;
+font-style: italic;
+	color: #2196f3
+}
+.pretty-button {
+	margin-top: 30px;
+	background-color:#2196f3;
+	border-radius: 50px;
+	display:inline-block;
+	color:#ffffff;
+	padding: 15px 100px;
+	text-shadow:0px 1px 0px #2f6627;
 }

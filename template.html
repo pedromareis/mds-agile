@@ -12,15 +12,31 @@
     <title>ISEC - MDS 2017/18!</title>
   </head>
   <body>
-	<div class="main-view">
-		<h1 class="project-title">Scrum Projects</h1>
-		<p class="project-description">Agile Planning and Controlling</p>
+	<nav class="navbar">
+		<div class="row">
+			<div class="col-md-8" style="text-align: left;">
+				<a class="navbar-brand" href="#">Scrum Projects</a>
+				<label class="navbar-brand2">Agile Planning and Controlling</label>
+			</div>
+		  <div class="col-md-1" style="text-align: right;"><span class="glyphicon glyphicon-stats"></span></div>
+		  <div class="col-md-2" style="text-align: right;"><span class="glyphicon glyphicon-user"><label id="username" class="navbar-brand3"></label></span></div>
+		</div>
+	</nav>
 
-		<input maxlength="25" id="inputUsername" class="input1" type="text" placeholder="Insert your name..."/>
-
-		<div class="container">
-			<a href="#" class="pretty-button" style="padding-left: 30px; padding-right: 30px;"><span class="glyphicon glyphicon-stats" style="padding: 0px; font-size: 20px;"></span></a>
-			<a href="#" id="enterBtn" onclick="checkUse()"class="pretty-button">TAKE OUR QUIZ</a>
+	<div class="row" style="margin-left: 60px;">
+		<div class="col-md-6 card-3">
+			<div class="presentation-container">
+				<div id="ok"></div>
+			</div>
+		</div>
+		<div class="col-md-6 card-3">
+			<div class="quiz-container">
+			<div id="quiz"></div>
+			</div>
+      <button id="previous">Previous Question</button>
+  		<button id="next">Next Question</button>
+  		<button id="submit">Submit Quiz</button>
+			<div id="results"></div>
 		</div>
 	</div>
 
