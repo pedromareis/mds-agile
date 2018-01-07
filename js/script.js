@@ -445,7 +445,7 @@ function checkUser() {
   }
 
   const quizContainer = document.getElementById("quiz");
-  const presentationContainer = document.getElementById("ok");
+  const presentationContainer = document.getElementById("contents");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
 
