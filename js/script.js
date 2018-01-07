@@ -1,5 +1,16 @@
-function checkUse() {
+// first function of to check if there is a username and to change to template
+function checkUser() {
+  var username = document.getElementById('inputUsername').value;
+  // check if username is not empty
+  if (!username) {
+    alert("Por favor intruduza um nome de utilizador.");
+  }
+  else {
+    //Set up a localStorage to pass the username to the next page
+    localStorage.setItem("username", username);
+    //change to template
     window.location='template.html';
+  }
 };
 
 (function() {
@@ -316,6 +327,11 @@ function checkUse() {
     }
   ];
 
+  function showUserName() {
+    // get the username by the localStorage
+    document.getElementById('username').innerHTML = localStorage.getItem("username");
+  }
+
   function buildPresentation() {
     const output = [];
 
@@ -433,9 +449,10 @@ function checkUse() {
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
 
-  // display quiz right away
+  // display quiz, presentation and username
   buildPresentation();
   buildQuiz();
+  showUserName();
 
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
