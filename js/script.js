@@ -1,11 +1,5 @@
-var user = "Maria"
-
 function checkUse() {
-  var username = document.getElementById('inputUsername').value;
-  alert(username);
-  window.reloadlocation='template.html';
-  document.getElementById("username").innerHTML = username;
-  checkUserName();
+    window.location='template.html';
 };
 
 (function() {
@@ -38,8 +32,8 @@ function checkUse() {
     },
     {
       content:"Content 6",
-      title: "",
-      text: ""
+      title: "As User Stories",
+      text: "No planeamento, User Stories devem ser pequenas e simples e devem ser escritas do ponto de vista da pessoa que deseja essa funcionalidade. Normalmente são escritas da seguinte forma: Como <tipo de utilizador>, eu quero <objetivo> para que <razão>. Estas ajudam a mudar o foco desde escrever sobre funcionalidades para discutir a funcionalidade. Qualquer pessoa pode escrever as User Stories mas é da responsabilidade do Product Owner que este backlog exista."
     },
     {
       content:"Content 7",
@@ -167,13 +161,14 @@ function checkUse() {
     },
     {
       content:"Content 6",
-      question: "",
+      question: "Para o planeamento do trabalho a realizar são usadas User Stories, qual é a afirnação correta?",
       answers: {
-        a: "",
-        b: "",
-        c: ""
+        a: "O Product Owner é o responsável por escrever as User Stories.",
+        b: "As User Stories devem ser escritas na perspetiva de quem vai usar a funcionalidade descrita",
+        c: "Os developers, que sabem mais do desenvolvimento, é quem deve escrever as User Stories.",
+        d: "Todos escrevem User Stories e no fim eliminam-se as repetidas."
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },
     {
       content:"Content 7",
@@ -321,13 +316,6 @@ function checkUse() {
     }
   ];
 
-  document.getElementById("username").innerHTML = user;
-  function checkUserName(name) {
-    alert("ok")
-      window.location='template.html';
-      document.getElementById('username').innerHTML = name;
-  }
-
   function buildPresentation() {
     const output = [];
 
@@ -444,7 +432,6 @@ function checkUse() {
   const presentationContainer = document.getElementById("ok");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
-//  let enterQuizButton = document.body.contains(document.getElementById("enterBtn"));
 
   // display quiz right away
   buildPresentation();
