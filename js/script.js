@@ -16,106 +16,26 @@ function checkUser() {
 (function() {
 
   const myPresentation = [
-    {
-      content:"Content 1",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 2",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 3",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 4",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 5",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 6",
-      title: "As User Stories",
-      text: "No planeamento, User Stories devem ser pequenas e simples e devem ser escritas do ponto de vista da pessoa que deseja essa funcionalidade. Normalmente são escritas da seguinte forma: Como <tipo de utilizador>, eu quero <objetivo> para que <razão>. Estas ajudam a mudar o foco desde escrever sobre funcionalidades para discutir a funcionalidade. Qualquer pessoa pode escrever as User Stories mas é da responsabilidade do Product Owner que este backlog exista."
-    },
-    {
-      content:"Content 7",
-      title: "Importância do planeamento em Scrum",
-      text: "Num projeto baseado em Scrum, o planeamento é um fator importante. Apesar de ser uma metodologia ágil, algum nível de planeamento é necessário para que o trabalho possa correr sem grandes sobressaltos. A forma de planeamento em Scrum segue o manifesto ágil, de valorizar a resposta à mudança sobre o seguir um plano."
-    },
-    {
-      content:"Content 8",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 9",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 10",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 11",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 12",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 13",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 14",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 15",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 16",
-      title: "Scrum Rugby",
-      text: "No Rugby quando há uma paragem no jogo a bola pode ser reposta de várias maneiras (maul, ruck, scrum, ...). Na reposição scrum juntam-se oito jogadores de cada equipa colocando-se numa estrutura predefinida com o objetivo de lutar pela posse de bola. Num scrum os jogadores de uma equipa não funcionam como entidades individuais, mas como um unidade de força e com o objetivo de dominar os adversários e recuperar a posse de bola.A parte essencial do scrum é o trabalho em equipa, este é o ponto mais importante neste contexto pois se um elemento não está de acrodo com os outros toda a estrutura se pode desmoronar."
-    },
-    {
-      content:"Content 17",
-      title: "Equipa de Scrum",
-      text: "Uma equipa de Scrum dever saber gerir-se e nenhuma pessoa pode obrigar a mesma a trabalhar de certa maneira. Visto que uma equipa deve ser composto por individuos motivados e que tenham a capacidade de tomar decisões sobre pressão e que se adaptem facilmente a novas situações. A equipa não pode ser influenciável pois assume-se que são experientes e comunicativos entre eles, por sua vez esta não pode tomar decisões como alterar backlogs ao fazer o que não foi planeado na sprint meeting."
-    },
-    {
-      content:"Content 18",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 19",
-      title: "",
-      text: ""
-    },
-    {
-      content:"Content 20",
-      title: "",
-      text: ""
-    }
+    presentation1,
+    presentation2,
+    presentation3,
+    presentation4,
+    presentation5,
+    presentation6,
+    presentation7,
+    presentation8,
+    presentation9,
+    presentation10,
+    presentation11,
+    presentation12,
+    presentation13,
+    presentation14,
+    presentation15,
+    presentation16,
+    presentation17,
+    presentation18,
+    presentation19,
+    presentation20
   ];
 
   const myQuestions = [
